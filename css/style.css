@@ -211,6 +211,13 @@
     transition: .5s;
 }
 
+.header-carousel,
+.owl-carousel-item img {
+    height: 75vh !important;
+    object-fit: cover;
+}
+
+
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image28.jpeg) center center no-repeat;
     background-size: cover;
