@@ -217,6 +217,14 @@
     object-fit: cover;
 }
 
+/* added css */
+.stats-section {
+    background: linear-gradient(to right, #0ea5e9, #38bdf8);
+    color: white;
+    border-radius: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image28.jpeg) center center no-repeat;
