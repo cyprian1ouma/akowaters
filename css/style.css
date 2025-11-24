@@ -226,6 +226,1453 @@
     padding-bottom: 80px;
 }
 
+/* added css */
+
+.stats-section {
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    color: white;
+    border-radius: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 2%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 2%, transparent 20%);
+    background-size: 100px 100px;
+    z-index: 0;
+}
+
+/* Section Background Colors with Water & Solar Elements */
+.section-bg-1 {
+    background: linear-gradient(to right, #dff3ff, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.05) 2%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.05) 2%, transparent 20%);
+    background-size: 150px 150px;
+    z-index: 0;
+}
+/* testionials section */
+
+.section-bg-2 {
+    background: linear-gradient(to right, #7edaf1, #ffffff);
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.section-bg-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 15% 70%, rgba(34, 197, 94, 0.05) 2%, transparent 20%),
+        radial-gradient(circle at 85% 30%, rgba(34, 197, 94, 0.05) 2%, transparent 20%);
+    background-size: 120px 120px;
+    z-index: 0;
+}
+
+.section-bg-3 {
+    background: linear-gradient(to right, #fff8e7, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 40%, rgba(251, 191, 36, 0.05) 2%, transparent 20%),
+        radial-gradient(circle at 75% 60%, rgba(251, 191, 36, 0.05) 2%, transparent 20%);
+    background-size: 130px 130px;
+    z-index: 0;
+}
+
+/* mission and video section */
+
+.section-bg-4 {
+    background: linear-gradient(135deg, #3b3bf0 0%, #497ff3 50%, #0ea5e9 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.section-bg-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 60%, rgba(255, 255, 255, 0.1) 2%, transparent 20%),
+        radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.1) 2%, transparent 20%);
+    background-size: 140px 140px;
+    z-index: 0;
+}
+
+/* Enhanced Water Droplets */
+.water-droplet {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    z-index: 1;
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        inset 0 0 10px rgba(173, 216, 230, 0.5);
+    animation: float 6s ease-in-out infinite;
+}
+
+.droplet-1 {
+    width: 20px;
+    height: 20px;
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.droplet-2 {
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 85%;
+    animation-delay: 1s;
+}
+
+.droplet-3 {
+    width: 25px;
+    height: 25px;
+    top: 60%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.droplet-4 {
+    width: 18px;
+    height: 18px;
+    top: 70%;
+    left: 80%;
+    animation-delay: 3s;
+}
+
+.droplet-5 {
+    width: 22px;
+    height: 22px;
+    top: 40%;
+    left: 5%;
+    animation-delay: 4s;
+}
+
+.droplet-6 {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 90%;
+    animation-delay: 5s;
+}
+
+.droplet-7 {
+    width: 19px;
+    height: 19px;
+    top: 80%;
+    left: 20%;
+    animation-delay: 6s;
+}
+
+.droplet-8 {
+    width: 24px;
+    height: 24px;
+    top: 30%;
+    left: 75%;
+    animation-delay: 7s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) rotate(-45deg) scale(1.05);
+    }
+}
+
+/* Solar Energy Symbol */
+.solar-symbol {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.sun-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #FFD700, #FFA500);
+    border-radius: 50%;
+    box-shadow: 0 0 15px #FFD700;
+}
+
+.sun-ray {
+    position: absolute;
+    background: #FFD700;
+    border-radius: 5px;
+    animation: pulse 3s infinite alternate;
+}
+
+.ray-1 {
+    width: 60px;
+    height: 8px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    animation-delay: 0s;
+}
+
+.ray-2 {
+    width: 60px;
+    height: 8px;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    animation-delay: 0.5s;
+}
+
+.ray-3 {
+    width: 8px;
+    height: 60px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    animation-delay: 1s;
+}
+
+.ray-4 {
+    width: 8px;
+    height: 60px;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    animation-delay: 1.5s;
+}
+
+.ray-5 {
+    width: 45px;
+    height: 8px;
+    top: 20%;
+    left: 80%;
+    transform: rotate(45deg);
+    animation-delay: 2s;
+}
+
+.ray-6 {
+    width: 45px;
+    height: 8px;
+    bottom: 20%;
+    right: 80%;
+    transform: rotate(45deg);
+    animation-delay: 2.5s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Content Cards */
+.mission-card, .vision-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid #0d6efd;
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensure content stays above background elements */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-bg-5 {
+    background: linear-gradient(to right, #e8f0ff, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg-5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.05) 2%, transparent 20%),
+        radial-gradient(circle at 70% 50%, rgba(59, 130, 246, 0.05) 2%, transparent 20%);
+    background-size: 160px 160px;
+    z-index: 0;
+}
+/* services section */
+
+.section-bg-6 {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 50%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px 0;
+}
+
+.section-bg-6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 80%, rgba(6, 182, 212, 0.1) 2%, transparent 20%),
+        radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.1) 2%, transparent 20%);
+    background-size: 110px 110px;
+    z-index: 0;
+}
+
+/* Borehole Water Elements */
+.borehole-water {
+    position: absolute;
+    background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 
+        0 0 20px rgba(0, 180, 219, 0.6),
+        inset 0 5px 10px rgba(255, 255, 255, 0.3);
+    animation: waterLevel 4s ease-in-out infinite alternate;
+}
+
+.borehole-1 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.borehole-2 {
+    width: 45px;
+    height: 45px;
+    top: 65%;
+    left: 85%;
+    animation-delay: 1s;
+}
+
+.borehole-3 {
+    width: 70px;
+    height: 70px;
+    top: 80%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.borehole-4 {
+    width: 55px;
+    height: 55px;
+    top: 35%;
+    left: 90%;
+    animation-delay: 3s;
+}
+
+@keyframes waterLevel {
+    0% {
+        transform: scale(1) translateY(0);
+        box-shadow: 
+            0 0 20px rgba(0, 180, 219, 0.6),
+            inset 0 5px 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: 
+            0 0 30px rgba(0, 180, 219, 0.8),
+            inset 0 8px 15px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Solar Panel Elements */
+.solar-panel {
+    position: absolute;
+    background: linear-gradient(45deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: solarGlow 5s ease-in-out infinite alternate;
+}
+
+.solar-1 {
+    width: 40px;
+    height: 25px;
+    top: 25%;
+    right: 10%;
+    transform: rotate(15deg);
+    animation-delay: 0s;
+}
+
+.solar-2 {
+    width: 35px;
+    height: 20px;
+    top: 70%;
+    right: 15%;
+    transform: rotate(-10deg);
+    animation-delay: 2s;
+}
+
+.solar-3 {
+    width: 50px;
+    height: 30px;
+    top: 45%;
+    left: 5%;
+    transform: rotate(5deg);
+    animation-delay: 4s;
+}
+
+@keyframes solarGlow {
+    0% {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 5px 25px rgba(255, 204, 0, 0.4);
+    }
+}
+
+/* Water Ripple Effects */
+.water-ripple {
+    position: absolute;
+    border: 2px solid rgba(0, 180, 219, 0.3);
+    border-radius: 50%;
+    z-index: 0;
+    animation: ripple 6s linear infinite;
+}
+
+.ripple-1 {
+    width: 100px;
+    height: 100px;
+    top: 18%;
+    left: 6%;
+    animation-delay: 0s;
+}
+
+.ripple-2 {
+    width: 80px;
+    height: 80px;
+    top: 62%;
+    left: 83%;
+    animation-delay: 2s;
+}
+
+.ripple-3 {
+    width: 120px;
+    height: 120px;
+    top: 78%;
+    left: 13%;
+    animation-delay: 4s;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Service Cards */
+.service-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 180, 219, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.service-card:hover::before {
+    left: 100%;
+}
+
+.service-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-img-container img {
+    transition: transform 0.5s ease;
+    height: 210px;
+    object-fit: cover;
+}
+
+.service-card:hover .service-img-container img {
+    transform: scale(1.1);
+}
+
+.service-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #0d6efd, #00b4db);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.2) rotate(15deg);
+    background: linear-gradient(135deg, #00b4db, #0d6efd);
+}
+
+/* Ensure content stays above background elements */
+.container-xxl, .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* why choose us section in home */
+
+.section-bg-7 {
+    background: linear-gradient(135deg, #44a3f1 0%, #407dee 30%, #162d7a 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.section-bg-7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: 
+        radial-gradient(circle at 20% 40%, rgba(233, 239, 247, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 60%, rgba(248, 113, 113, 0.1) 0%, transparent 50%),
+        linear-gradient(45deg, transparent 48%, rgba(248, 113, 113, 0.05) 50%, transparent 52%); */
+    background-size: 
+        200px 200px,
+        150px 150px,
+        30px 30px;
+    z-index: 0;
+    animation: backgroundShift 8s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+    0%, 100% {
+        background-position: 
+            0% 0%,
+            100% 100%,
+            0 0;
+    }
+    50% {
+        background-position: 
+            100% 100%,
+            0% 0%,
+            30px 30px;
+    }
+}
+
+/* Water Flow Animation */
+.water-flow-container {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 60px;
+    height: 120px;
+    z-index: 1;
+}
+
+.water-tap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 15px;
+    background: #6c757d;
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+}
+
+.water-tap::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 8px;
+    background: #495057;
+    border-radius: 3px 3px 0 0;
+}
+
+.water-stream {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 80px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        #00b4db 10%, 
+        #0083b0 50%, 
+        #00b4db 90%, 
+        transparent 100%);
+    animation: waterFlow 2s linear infinite;
+    z-index: 1;
+}
+
+.water-drop {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #00b4db;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dropFall 2s linear infinite;
+    box-shadow: 0 0 8px rgba(0, 180, 219, 0.6);
+}
+
+.drop-1 { top: 10px; animation-delay: 0s; }
+.drop-2 { top: 25px; animation-delay: 0.4s; }
+.drop-3 { top: 40px; animation-delay: 0.8s; }
+.drop-4 { top: 55px; animation-delay: 1.2s; }
+.drop-5 { top: 70px; animation-delay: 1.6s; }
+
+.water-splash {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 8px;
+    background: radial-gradient(ellipse at center, 
+        rgba(0, 180, 219, 0.8) 0%, 
+        rgba(0, 131, 176, 0.4) 40%, 
+        transparent 70%);
+    border-radius: 50%;
+    animation: splash 2s ease-in-out infinite;
+}
+
+@keyframes waterFlow {
+    0% {
+        opacity: 0.8;
+        height: 80px;
+    }
+    50% {
+        opacity: 1;
+        height: 85px;
+    }
+    100% {
+        opacity: 0.8;
+        height: 80px;
+    }
+}
+
+@keyframes dropFall {
+    0% {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(-50%) translateY(80px) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes splash {
+    0%, 100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(-50%) scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Solar Energy Animation */
+.solar-energy {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 80px;
+    height: 60px;
+    z-index: 1;
+}
+
+.solar-panel-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-base {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 8px;
+    background: #495057;
+    border-radius: 2px;
+}
+
+.panel-surface {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 40px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.panel-surface::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(45deg, 
+        transparent 0%, 
+        rgba(255, 204, 0, 0.1) 50%, 
+        transparent 100%);
+    border-radius: 3px;
+    animation: solarGlow 3s ease-in-out infinite;
+}
+
+.energy-flow {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to top, 
+        transparent 0%, 
+        #FFD700 30%, 
+        #FFA500 70%, 
+        transparent 100%);
+    animation: energyPulse 2s ease-in-out infinite;
+}
+
+@keyframes solarGlow {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes energyPulse {
+    0%, 100% {
+        height: 20px;
+        opacity: 0.6;
+    }
+    50% {
+        height: 25px;
+        opacity: 1;
+    }
+}
+
+/* Enhanced Feature Items */
+.feature-item {
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(13, 110, 253, 0.05);
+    transform: translateX(5px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0d6efd, #00b4db);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+/* Ensure content stays above background elements */
+.container-fluid, .container {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* project section */
+.section-bg-8 {
+    background: linear-gradient(135deg, #6cb2f8 0%, #e9ecef 50%, #6cb2f8 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.section-bg-8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(13, 110, 253, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 180, 219, 0.03) 0%, transparent 50%);
+    background-size: 200px 200px;
+    z-index: 0;
+}
+
+/* Background Elements */
+.bg-element {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.solar-bg-left {
+    top: 10%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    background-image: url("/img/bg-droplets.png");
+}
+
+.water-bg-right {
+    bottom: 10%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/bg-sun-rays.png");
+}
+
+/* Enhanced Project Cards */
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-img img {
+    transition: transform 0.5s ease;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-card:hover .portfolio-img img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-category {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    background: rgba(13, 110, 253, 0.9);
+    padding: 5px 12px;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-content {
+    padding: 0 20px 20px;
+}
+
+.project-meta {
+    border-top: 1px solid #e9ecef;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+/* Enhanced Filter Buttons */
+#portfolio-flters .btn {
+    transition: all 0.3s ease;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+#portfolio-flters .btn:hover {
+    transform: translateY(-2px);
+}
+
+#portfolio-flters .btn-primary {
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+#portfolio-flters .btn-outline-primary:hover {
+    background: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Ensure content stays above background elements */
+.container-xxl, .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* team section */
+
+/* .section-bg-9 {
+    background: linear-gradient(135deg, #f7ffe6 0%, #f0f9ff 50%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+} */
+
+.section-bg-9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(132, 204, 22, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.08) 0%, transparent 50%);
+    background-size: 200px 200px;
+    z-index: 0;
+}
+
+/* Background Elements */
+.team-bg-element {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.team-gear {
+    background: url("/img/bg-waves.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rotate 20s linear infinite;
+}
+.team-gear-1 {
+    top: 15%;
+    left: 8%;
+    width: 80px;
+    height: 80px;
+} 
+
+.team-gear-2 {
+    bottom: 20%;
+    right: 10%;
+    width: 60px;
+    height: 60px;
+    animation-direction: reverse;
+} 
+
+.team-circuit {
+    background: url("/img/bg-energy-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.team-circuit-1 {
+    top: 25%;
+    right: 8%;
+    width: 70px;
+    height: 70px;
+}
+
+.team-circuit-2 {
+    bottom: 15%;
+    left: 12%;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Team Cards */
+.team-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.team-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img {
+    transform: scale(1.1);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(13, 110, 253, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-info {
+    margin-bottom: 20px;
+}
+
+.team-bio {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.team-social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.team-social-link:hover {
+    background: white;
+    color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+.team-content {
+    background: white;
+    position: relative;
+}
+
+.team-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill-tag {
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Team Stats */
+.team-stats {
+    border-left: 4px solid #0d6efd;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+}
+
+/* Ensure content stays above background elements */
+.container-xxl, .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-img-container {
+        height: 280px;
+    }
+    
+    .team-overlay {
+        padding: 20px;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Make sure sections stretch full width */
+.section-bg-1,
+.section-bg-2,
+.section-bg-3,
+.section-bg-4,
+.section-bg-5,
+.section-bg-6,
+.section-bg-7,
+.section-bg-8,
+.section-bg-9 {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Ensure content stays above background elements */
+.container-xxl, .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Water Wave Animation for Stats Section */
+.water-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="rgba(255,255,255,0.1)"></path></svg>');
+    background-size: 1200px 100px;
+    animation: wave 10s linear infinite;
+}
+
+.water-wave:nth-child(2) {
+    bottom: 10px;
+    opacity: 0.5;
+    animation: wave 15s linear infinite;
+    background-size: 1100px 100px;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1200px;
+    }
+}
+
+/* Solar Rays Animation */
+.solar-rays {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+/* Water Droplet Animation */
+.water-droplet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(14, 165, 233, 0.2);
+    border-radius: 50%;
+    animation: droplet 8s linear infinite;
+}
+
+@keyframes droplet {
+    0% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Floating Elements */
+.floating-element {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.floating-solar {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.1) 0%, transparent 100%);
+    border-radius: 50%;
+    animation: float 15s ease-in-out infinite;
+}
+
+.floating-water {
+    width: 60px;
+    height: 60px;
+    background: rgba(14, 165, 233, 0.1);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(45deg);
+    animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+
+/* General config for all sections with objects */
+.section-with-objects {
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Water Waves Background --- */
+.water-waves::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url('/img/bg-waves.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+/* --- Solar Rays Glow --- */
+.solar-rays::before {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: 20%;
+    width: 300px;
+    height: 300px;
+    background: url('/img/bg-sun-rays.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.22;
+    z-index: 0;
+}
+
+/* --- Water Droplets floating --- */
+.droplets::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 10%;
+    width: 160px;
+    height: 160px;
+    background: url('/img/bg-droplets.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.18;
+    z-index: 0;
+}
+
+/* --- Circular Energy Wave Pattern --- */
+.energy-circle::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: 5%;
+    width: 260px;
+    height: 260px;
+    background: url('/img/bg-energy-circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+/* Make sure foreground text stays above the objects */
+.section-with-objects > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image28.jpeg) center center no-repeat;
     background-size: cover;
@@ -588,4 +2035,867 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+/* added css on the about page */
+.water-flow-bg {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        transparent 100%);
+    animation: waterFlow 8s linear infinite;
+    z-index: 0;
+}
+
+@keyframes waterFlow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Profile Content Styling */
+.profile-content {
+    border-left: 4px solid #0d6efd;
+    position: relative;
+    z-index: 1;
+}
+
+.mission-vision {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.2);
+}
+
+.mission-vision::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0ea5e9 100%);
+    z-index: -1;
+}
+
+/* Icon Styling */
+.icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.highlight-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Text Styling */
+.company-overview p {
+    line-height: 1.7;
+}
+
+.mission-section, .vision-section {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-section h5, .vision-section h5 {
+    font-size: 1.2rem;
+}
+
+/* Company Highlights */
+.company-highlights {
+    border: 1px solid #e9ecef;
+}
+
+.highlight-item h5 {
+    color: #08305a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-content,
+    .mission-vision {
+        padding: 30px 25px !important;
+    }
+    
+    .highlight-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-content,
+    .mission-vision {
+        padding: 25px 20px !important;
+    }
+    
+    .d-flex.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .icon-container {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* About Section Styling */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.about-text {
+    background: white;
+}
+
+/* Service Items Styling */
+.service-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.service-item {
+    transition: transform 0.2s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+}
+
+.services-list {
+    border-left: 3px solid #0d6efd;
+    padding-left: 20px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0ea5e9);
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Text Styling */
+h1 {
+    line-height: 1.3;
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 400px !important;
+    }
+    
+    .about-text {
+        padding: 3rem 1.5rem !important;
+    }
+    
+    .p-lg-5 {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 300px !important;
+    }
+    
+    .about-text {
+        padding: 2rem 1rem !important;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .services-list {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 250px !important;
+    }
+    
+    .about-text {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Background Patterns */
+.team-bg-pattern {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.03;
+    z-index: 0;
+}
+
+.team-bg-1 {
+    top: 10%;
+    left: 5%;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%230d6efd' d='M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm0 5a25 25 0 1 1 0 50 25 25 0 0 1 0-50z'/%3E%3Cpath fill='%230d6efd' d='M50 15v10M50 75v10M15 50h10M75 50h10M25 25l7 7M68 68l7 7M25 75l7-7M68 32l7-7'/%3E%3C/svg%3E");
+}
+
+.team-bg-2 {
+    bottom: 10%;
+    right: 5%;
+    width: 120px;
+    height: 120px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%2300b4db' d='M50 30c15 0 25 20 25 20s-10 20-25 20-25-20-25-20 10-20 25-20zm0 5c-12 0-20 15-20 15s8 15 20 15 20-15 20-15-8-15-20-15z'/%3E%3Cpath fill='%2300b4db' d='M35 45c2-5 8-5 10 0 2 5-2 10-5 10-3 0-7-5-5-10zm30 0c2-5 8-5 10 0 2 5-2 10-5 10-3 0-7-5-5-10z'/%3E%3C/svg%3E");
+}
+
+/* Team Cards */
+.team-card {
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.team-card:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-img-container img {
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-img-container img {
+    transform: scale(1.05);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(13, 110, 253, 0.9) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.expertise-tag {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0d6efd;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.team-content {
+    border-top: 3px solid #f8f9fa;
+}
+
+.team-qualifications {
+    line-height: 1.6;
+}
+
+/* Team Stats */
+.team-stats {
+    border: 1px solid #e9ecef;
+}
+
+.stat-item h4 {
+    font-size: 2.2rem;
+}
+
+/* Ensure content stays above background elements */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-img-container img {
+        height: 250px;
+    }
+    
+    .stat-item h4 {
+        font-size: 1.8rem;
+    }
+    
+    .team-stats {
+        padding: 2rem 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-img-container img {
+        height: 220px;
+    }
+    
+    .team-content {
+        padding: 1.5rem !important;
+    }
+}
+
+/* professional team styles */
+/* Water Drop Animation */
+.water-drop-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.water-drop {
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background: linear-gradient(to bottom, rgba(13, 110, 253, 0.3), rgba(0, 180, 219, 0.2));
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: waterDrop 6s linear infinite;
+    opacity: 0;
+}
+
+@keyframes waterDrop {
+    0% {
+        top: -20px;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+/* Project Image Container */
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-image-container img {
+    transition: transform 0.3s ease;
+    height: 280px;
+    object-fit: cover;
+}
+
+.project-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.project-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(13, 110, 253, 0.9);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tag {
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0ea5e9);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+}
+
+/* Text Styling */
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-image-container img {
+        height: 220px;
+    }
+    
+    .project-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .ps-md-4, .pe-md-4 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-image-container img {
+        height: 200px;
+    }
+    
+    .project-tags {
+        gap: 6px;
+    }
+    
+    .tag {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+}
+/* professional opening about  */
+ /* Stat Cards */
+ .stat-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Stat Icons */
+.stat-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #0d6efd, #0ea5e9) !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Stat Numbers */
+.stat-number {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+/* Text Styling */
+h5 {
+    font-size: 1.1rem;
+}
+
+.text-muted {
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stat-card {
+        padding: 1.5rem !important;
+    }
+    
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .stat-card {
+        padding: 1.25rem !important;
+        margin-bottom: 1rem;
+    }
+    
+    .stat-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+}
+
+/* services page here */
+ /* Custom Variables */
+ :root {
+    --primary-color: #0d6efd;
+    --primary-soft: rgba(13, 110, 253, 0.1);
+    --gradient-primary: linear-gradient(135deg, #0d6efd 0%, #0ea5e9 100%);
+    --gradient-text: linear-gradient(135deg, #08305a 0%, #0d6efd 100%);
+}
+
+/* Background Elements */
+.services-bg-element {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.03;
+    z-index: 0;
+}
+
+.services-bg-1 {
+    top: 5%;
+    left: 5%;
+    width: 200px;
+    height: 200px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%230d6efd' d='M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm0 5a25 25 0 1 1 0 50 25 25 0 0 1 0-50z'/%3E%3Cpath fill='%230d6efd' d='M50 15v10M50 75v10M15 50h10M75 50h10M25 25l7 7M68 68l7 7M25 75l7-7M68 32l7-7'/%3E%3C/svg%3E");
+}
+
+.services-bg-2 {
+    bottom: 10%;
+    right: 8%;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%2300b4db' d='M50 30c15 0 25 20 25 20s-10 20-25 20-25-20-25-20 10-20 25-20zm0 5c-12 0-20 15-20 15s8 15 20 15 20-15 20-15-8-15-20-15z'/%3E%3C/svg%3E");
+}
+
+.services-bg-3 {
+    top: 40%;
+    right: 15%;
+    width: 100px;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='none' stroke='%2384cc16' stroke-width='3' d='M20 20h20v20H20zM60 20h20v20H60zM20 60h20v20H20zM60 60h20v20H60zM40 40h20M40 40v20M60 40v20'/%3E%3C/svg%3E");
+}
+
+/* Section Header */
+.section-badge {
+    display: inline-block;
+}
+
+.bg-primary-soft {
+    background-color: var(--primary-soft) !important;
+}
+
+.gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.service-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--gradient-primary);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.service-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 0.9;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-title {
+    font-weight: 700;
+    color: #08305a;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.service-description {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.feature-tag {
+    background: var(--primary-soft);
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.service-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0a58ca;
+    transform: translateX(5px);
+}
+
+/* Call to Action */
+.cta-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary) !important;
+}
+
+.cta-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.btn-light {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-image {
+        height: 180px;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+    
+    .cta-card {
+        padding: 2rem !important;
+    }
+    
+    .display-5 {
+        font-size: 2.5rem;
+    }
+    
+    .display-6 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-image {
+        height: 160px;
+    }
+    
+    .service-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .cta-card {
+        padding: 1.5rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
 }

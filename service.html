@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/logo1.jpeg" rel="icon">
+    <link href="img/logo3.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,8 +76,8 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <div style="display:flex; align-items:center; gap:15px;">
-                <img src="./img/logo1.jpeg" alt="logo"
-                     style="width:65px; height:65px; border-radius:50%; box-shadow:0 0 8px rgba(0,0,0,0.25); border:2px solid #0d6efd;">
+              <img src="./img/logo3.png" alt="logo"
+                     style="width:65px; height:65px;">
                 <div style="border-left:3px solid #0d6efd; height:45px;"></div>
                 <!-- <h3 class="text-primary" style="font-weight:700; margin:0; letter-spacing:1px;">
                     AKO WATER AND ENERGY SOLUTIONS LTD
@@ -128,164 +128,263 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                <h6 class="text-primary mb-3">OUR SERVICES</h6>
-                <h1 class="mb-4 display-5 fw-bold">Professional Water & Energy Solutions</h1>
-                <p class="lead text-muted">Comprehensive services for sustainable water access and renewable energy systems</p>
+    <div class="container-xxl py-5 position-relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="services-bg-element services-bg-1"></div>
+        <div class="services-bg-element services-bg-2"></div>
+        <div class="services-bg-element services-bg-3"></div>
+        
+        <div class="container position-relative">
+            <!-- Section Header -->
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <div class="section-badge mb-4">
+                    <span class="badge bg-primary-soft text-primary fw-semibold px-4 py-2 rounded-pill">
+                        <i class="fas fa-bolt me-2"></i>OUR SERVICES
+                    </span>
+                </div>
+                <h1 class="display-5 fw-bold mb-4 gradient-text">Professional Water & Energy Solutions</h1>
+                <p class="lead text-muted">Comprehensive services for sustainable water access and renewable energy systems designed for Kenyan communities and businesses</p>
             </div>
             
+            <!-- Services Grid -->
             <div class="row g-4">
                 <!-- Hydrogeological Survey -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Hydrogeological Survey">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">01</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Survey Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Hydrogeological Survey</h5>
+                    <div class="service-card">
+                        <div class="service-number">01</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Hydrogeological Survey">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Professional groundwater assessment to determine optimal borehole locations and sustainable water sources with detailed technical recommendations.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Hydrogeological Survey</h4>
+                            <p class="service-description">Professional groundwater assessment to determine optimal borehole locations and sustainable water sources.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Groundwater Mapping</span>
+                                <span class="feature-tag">Site Assessment</span>
+                                <span class="feature-tag">Technical Reports</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- WRA Permits -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="WRA Permits">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">02</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Permits Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">WRA Permits & Licensing</h5>
+                    <div class="service-card">
+                        <div class="service-number">02</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="WRA Permits">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Streamlined Water Resources Authority permit applications ensuring full compliance with Kenya's Water Act 2021 regulations.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">WRA Permits & Licensing</h4>
+                            <p class="service-description">Streamlined Water Resources Authority permit applications ensuring full regulatory compliance.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Permit Processing</span>
+                                <span class="feature-tag">Legal Compliance</span>
+                                <span class="feature-tag">Documentation</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Borehole Drilling Supervision -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Drilling Supervision">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">03</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Drilling Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Drilling Supervision</h5>
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Drilling Supervision">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-hard-hat"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Expert oversight of drilling operations ensuring quality, safety, and adherence to technical specifications and standards.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Drilling Supervision</h4>
+                            <p class="service-description">Expert oversight of drilling operations ensuring quality, safety, and adherence to standards.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Quality Control</span>
+                                <span class="feature-tag">Safety Standards</span>
+                                <span class="feature-tag">Technical Oversight</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Test Pumping -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Test Pumping">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">04</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Pumping Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Test Pumping & Analysis</h5>
+                    <div class="service-card">
+                        <div class="service-number">04</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Test Pumping">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Comprehensive 24-hour pumping tests to determine borehole yield and recommend optimal pump sizing for maximum efficiency.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Test Pumping & Analysis</h4>
+                            <p class="service-description">Comprehensive pumping tests to determine borehole yield and recommend optimal pump sizing.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Yield Testing</span>
+                                <span class="feature-tag">Pump Sizing</span>
+                                <span class="feature-tag">Efficiency Analysis</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Pump Installation -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Pump Installation">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">05</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Pump Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Pump Installation</h5>
+                    <div class="service-card">
+                        <div class="service-number">05</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Pump Installation">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Professional installation of pumps, rising mains, and power systems tailored to your borehole's specific requirements.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Pump Installation</h4>
+                            <p class="service-description">Professional installation of pumps and power systems tailored to your specific requirements.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Custom Installation</span>
+                                <span class="feature-tag">Power Systems</span>
+                                <span class="feature-tag">Maintenance Ready</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Solar Systems -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Solar Systems">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">06</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Solar Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Solar System Installation</h5>
+                    <div class="service-card">
+                        <div class="service-number">06</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Solar Systems">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-solar-panel"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Eco-friendly solar energy solutions including panels and inverters to power your water systems efficiently and sustainably.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Solar System Installation</h4>
+                            <p class="service-description">Eco-friendly solar energy solutions to power your water systems efficiently and sustainably.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Renewable Energy</span>
+                                <span class="feature-tag">Cost Effective</span>
+                                <span class="feature-tag">Sustainable</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Generator Installation -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Generator Installation">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">07</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Generator Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Generator Installation</h5>
+                    <div class="service-card">
+                        <div class="service-number">07</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Generator Installation">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Reliable backup generator installations ensuring uninterrupted water supply during power outages and emergencies.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Generator Installation</h4>
+                            <p class="service-description">Reliable backup generator installations ensuring uninterrupted water supply during outages.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Backup Power</span>
+                                <span class="feature-tag">Emergency Ready</span>
+                                <span class="feature-tag">Uninterrupted Supply</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Borehole Servicing -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-img-top position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/image12.jpeg" alt="Borehole Servicing">
-                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 fw-bold">08</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle me-3" src="img/image12.jpeg" alt="Servicing Icon" style="width: 70px; height: 70px; object-fit: cover;">
-                                <h5 class="card-title mb-0">Borehole Servicing</h5>
+                    <div class="service-card">
+                        <div class="service-number">08</div>
+                        <div class="service-image">
+                            <img src="img/image12.jpeg" alt="Borehole Servicing">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
                             </div>
-                            <p class="card-text text-muted">Comprehensive maintenance, repair, and rehabilitation services to keep your water systems running optimally.</p>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Borehole Servicing</h4>
+                            <p class="service-description">Comprehensive maintenance and repair services to keep your water systems running optimally.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Maintenance</span>
+                                <span class="feature-tag">Repair Services</span>
+                                <span class="feature-tag">System Optimization</span>
+                            </div>
+                            <a href="#" class="service-link">
+                                Learn More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
     
-            <!-- Call to Action -->
+            <!-- Modern Call to Action -->
             <div class="text-center mt-5 pt-4">
-                <div class="bg-light rounded-3 p-5">
-                    <h3 class="text-dark mb-3">Ready to Start Your Project?</h3>
-                    <p class="text-muted mb-4">Get professional consultation and a customized solution for your water and energy needs</p>
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="tel:+254723456789" class="btn btn-primary btn-lg px-4 py-3">
-                            <i class="fa fa-phone me-2"></i>Call Now
-                        </a>
-                        <a href="mailto:info@akowater.co.ke" class="btn btn-outline-primary btn-lg px-4 py-3">
-                            <i class="fa fa-envelope me-2"></i>Email Us
-                        </a>
+                <div class="cta-card bg-gradient-primary text-white rounded-4 p-5 position-relative overflow-hidden">
+                    <div class="cta-bg-pattern"></div>
+                    <div class="position-relative" style="z-index: 2;">
+                        <h3 class="display-6 fw-bold mb-3">Ready to Transform Your Water & Energy Systems?</h3>
+                        <p class="lead mb-4 opacity-90">Get a professional consultation and customized solution tailored to your specific needs</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="tel:+254718897204" class="btn btn-light btn-lg px-5 py-3 fw-semibold rounded-pill">
+                                <i class="fas fa-phone me-2"></i>Call Us
+                            </a>
+                            <a href="mailto:Akowatersolutions@gmail.com" class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold rounded-pill">
+                                <i class="fas fa-envelope me-2"></i>Email Us
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <small class="opacity-75">
+                                <i class="fas fa-clock me-1"></i>Available Mon-Fri: 8:00 AM - 6:00 PM
+                            </small>
+                        </div>
                     </div>
                 </div>
             </div>
