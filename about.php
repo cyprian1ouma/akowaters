@@ -61,6 +61,7 @@
                     <small>+254 718897204</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="./admin/login.php"><i class="fas fa-user-lock"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -74,36 +75,21 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <div style="display:flex; align-items:center; gap:15px;">
-               <img src="./img/logo3.png" alt="logo"
-                     style="width:65px; height:65px;">
-                <div style="border-left:3px solid #0d6efd; height:45px;"></div>
-                <!-- <h3 class="text-primary" style="font-weight:700; margin:0; letter-spacing:1px;">
-                    AKO WATER AND ENERGY SOLUTIONS LTD
-                </h3> -->
-            </div>   
+        <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <!-- Logo image -->
+            <img src="./img/logo3.png" style="height: 120px;width: 140px;" alt="Ako Logo" class="h-10 w-11">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="project.html" class="nav-item nav-link">Project</a>
-                <!--<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                   <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                         <a href="404.html" class="dropdown-item">404 Page</a> 
-                    </div>
-                </div>-->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="about.php" class="nav-item nav-link active">About</a>
+                <a href="service.php" class="nav-item nav-link">Service</a>
+                <a href="project.php" class="nav-item nav-link">Project</a>
+                <a href="gallery.php" class="nav-item nav-link ">Gallery</a>
+                <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -184,9 +170,13 @@
     <!-- Features End -->
 
     <!-- Organization Profile Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 profile-section">
+        <div class="moving-water-object"></div>
+        <div class="floating-droplet droplet-1"></div>
+        <div class="floating-droplet droplet-2"></div>
+        <div class="floating-droplet droplet-3"></div>
         <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <div class="text-center mx-auto mb-5">
                 <h6 class="text-primary mb-3 fw-bold text-uppercase" style="letter-spacing: 2px;">Organization Profile</h6>
                 <h1 class="mb-4 fw-bold" style="color:#08305a;">AKO Water And Energy Solutions Ltd</h1>
             </div>
@@ -282,7 +272,7 @@
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 500px;">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/image19.jpeg" style="object-fit: cover;" alt="About AKO Water and Energy">
                     </div>
@@ -296,7 +286,7 @@
                         <div class="services-list mb-4">
                             <div class="service-item d-flex align-items-center mb-3">
                                 <div class="service-icon bg-primary rounded-circle me-3">
-                                    <i class="fas fa-check text-white"></i>
+                                    <i class="fas fa-check fa-sm text-white"></i>
                                 </div>
                                 <span class="text-dark">Hydrogeological Surveys & Assessments</span>
                             </div>
@@ -335,7 +325,7 @@
     <!-- About End -->
 
     <!-- procfession team -->
-    <div class="container-xxl py-5 position-relative" style="background: linear-gradient(135deg, #eaf4ff, #dceeff); overflow: hidden;">
+    <div class="container-xxl projects-section" style="background: linear-gradient(135deg, #eaf4ff, #dceeff); overflow: hidden; width: 100%;">
         <!-- Water Drop Animation -->
         <div class="water-drop-animation">
             <div class="water-drop" style="left: 10%; animation-delay: 0s;"></div>
@@ -480,7 +470,7 @@
     
             <!-- Call to Action -->
             <div class="text-center mt-5 pt-4">
-                <a href="#" class="btn btn-primary btn-lg px-5 py-3 fw-semibold">
+                <a href="project.php" class="btn btn-primary btn-lg px-5 py-3 fw-semibold">
                     View All Projects
                 </a>
             </div>
@@ -489,9 +479,9 @@
     <!-- profession team ends here -->
     
 
-    <!-- Team Start -->
+    <!-- Team Start 
     <div class="container-xxl py-5 position-relative">
-        <!-- Background Elements -->
+       
         <div class="team-bg-pattern team-bg-1"></div>
         <div class="team-bg-pattern team-bg-2"></div>
         
@@ -502,7 +492,7 @@
                 <p class="text-muted lead">Meet our dedicated team of experts committed to delivering sustainable water and energy solutions</p>
             </div>
             <div class="row g-4">
-                <!-- Team Member 1 -->
+               
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card bg-white rounded shadow-sm">
                         <div class="team-img-container">
@@ -527,7 +517,7 @@
                     </div>
                 </div>
     
-                <!-- Team Member 2 -->
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card bg-white rounded shadow-sm">
                         <div class="team-img-container">
@@ -552,7 +542,7 @@
                     </div>
                 </div>
     
-                <!-- Team Member 3 -->
+             
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card bg-white rounded shadow-sm">
                         <div class="team-img-container">
@@ -578,7 +568,7 @@
                 </div>
             </div>
     
-            <!-- Team Stats -->
+           
             <div class="row mt-5 pt-4">
                 <div class="col-12">
                     <div class="team-stats bg-light rounded p-4">
@@ -613,17 +603,189 @@
             </div>
         </div>
     </div>
-    <!-- Team End -->
+     Team End -->
+
+    <div class="section-bg-9">
+        <!-- Background Elements -->
+        <div class="team-bg-element team-gear team-gear-1"></div>
+        <div class="team-bg-element team-gear team-gear-2"></div>
+        <div class="team-bg-element team-circuit team-circuit-1"></div>
+        <div class="team-bg-element team-circuit team-circuit-2"></div>
+        
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6 class="text-primary fw-bold text-uppercase" style="letter-spacing: 2px;">Our Team</h6>
+                    <h1 class="mb-4 fw-bold" style="color:#08305a;">Meet Our Expert Team</h1>
+                    <p class="text-muted lead">Dedicated professionals committed to delivering sustainable water and energy solutions</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Team Member 1 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-card">
+                            <div class="team-img-container">
+                                <img class="team-img" src="img/image1.jpeg" alt="Team Member">
+                                <div class="team-overlay">
+                                    <div class="team-info">
+                                        <h5 class="text-white mb-2">John Kamau</h5>
+                                        <p class="text-light mb-3">Senior Hydrogeologist</p>
+                                        <p class="team-bio">15+ years in groundwater exploration and sustainable water resource management</p>
+                                    </div>
+                                    <!-- <div class="team-social">
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="team-content text-center p-4">
+                                <h5 class="fw-bold mb-1">John Kamau</h5>
+                                <p class="text-primary mb-2">Senior Hydrogeologist</p>
+                                <div class="team-skills">
+                                    <span class="skill-tag">Groundwater</span>
+                                    <span class="skill-tag">WRA Compliance</span>
+                                    <span class="skill-tag">Survey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-card">
+                            <div class="team-img-container">
+                                <img class="team-img" src="img/image2.jpeg" alt="Team Member">
+                                <div class="team-overlay">
+                                    <div class="team-info">
+                                        <h5 class="text-white mb-2">Sarah Mwende</h5>
+                                        <p class="text-light mb-3">Solar Energy Engineer</p>
+                                        <p class="team-bio">Expert in renewable energy systems design and implementation with 12 years experience</p>
+                                    </div>
+                                    <!-- <div class="team-social">
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="team-content text-center p-4">
+                                <h5 class="fw-bold mb-1">Sarah Mwende</h5>
+                                <p class="text-primary mb-2">Solar Energy Engineer</p>
+                                <div class="team-skills">
+                                    <span class="skill-tag">Solar Design</span>
+                                    <span class="skill-tag">Renewable Energy</span>
+                                    <span class="skill-tag">Installation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-card">
+                            <div class="team-img-container">
+                                <img class="team-img" src="img/image3.jpeg" alt="Team Member">
+                                <div class="team-overlay">
+                                    <div class="team-info">
+                                        <h5 class="text-white mb-2">David Ochieng</h5>
+                                        <p class="text-light mb-3">Project Manager</p>
+                                        <p class="team-bio">PMP certified with 10+ years managing water and energy projects across East Africa</p>
+                                    </div>
+                                    <!-- <div class="team-social">
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="team-social-link" href="#">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="team-content text-center p-4">
+                                <h5 class="fw-bold mb-1">David Ochieng</h5>
+                                <p class="text-primary mb-2">Project Manager</p>
+                                <div class="team-skills">
+                                    <span class="skill-tag">Project Management</span>
+                                    <span class="skill-tag">Team Leadership</span>
+                                    <span class="skill-tag">Quality Control</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Stats -->
+                <div class="row mt-5 pt-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-12">
+                        <div class="team-stats bg-white rounded shadow-sm p-4">
+                            <div class="row text-center">
+                                <div class="col-md-3 mb-3 mb-md-0">
+                                    <div class="stat-item">
+                                        <h3 class="text-primary fw-bold mb-1">50+</h3>
+                                        <p class="text-muted mb-0">Years Combined Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 mb-md-0">
+                                    <div class="stat-item">
+                                        <h3 class="text-primary fw-bold mb-1">1000+</h3>
+                                        <p class="text-muted mb-0">Projects Completed</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 mb-md-0">
+                                    <div class="stat-item">
+                                        <h3 class="text-primary fw-bold mb-1">15+</h3>
+                                        <p class="text-muted mb-0">Professional Certifications</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <h3 class="text-primary fw-bold mb-1">98%</h3>
+                                        <p class="text-muted mb-0">Client Satisfaction Rate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5">
         <div class="container py-5">
             <div class="row g-5">
+                <!-- Logo and Description Column -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>111-80100 MOMBASA KENYA.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 718897204</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Akowatersolutions@gmail.com</p>
+                    <img src="./img/logo3.png" alt="Ako Water and Energy Solutions" class="mb-3" id="logo3">
+                    <p class="text-light small">
+                        Providing sustainable water and energy solutions for a better tomorrow. Your trusted partner in hydrogeological services and renewable energy systems.
+                    </p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -631,43 +793,29 @@
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>111-80100 MOMBASA KENYA.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 718897204</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Akowatersolutions@gmail.com</p>
+                </div>
+                
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="./about.html">About Us</a>
-                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="./service.html">Our Services</a>
-                    <a class="btn btn-link" href="./contact.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="./team.html">Support</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./about.php">About Us</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./contact.php">Contact Us</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./service.php">Our Services</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./contact.php">Terms & Condition</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./team.php">Support</a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Project Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-6.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
+                
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Subscribe to receive our latest news, updates, and special offers.</p>
+                    <p class="small">Subscribe to receive our latest news, updates, and special offers.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                        <input class="form-control border-0 w-100 py-2 ps-3 pe-5 small" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-1 px-3 small position-absolute top-0 end-0 mt-1 me-1">Sign Up</button>
                     </div>
                 </div>                
             </div>
@@ -676,11 +824,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Ako Water and Energy Solutions LTD</a>, All Right Reserved.
+                        &copy; <a href="#" class="text-white">Ako Water and Energy Solutions LTD</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         Designed By Ako Water and Energy Solutions LTD
-                        <!-- <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
                     </div>
                 </div>
             </div>
@@ -691,6 +838,13 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+    <!-- whatsaap icon -->
+    <a href="https://wa.me/254718897204?text=Hi,%20welcome%20to%20our%20organization.%20How%20can%20I%20help%20you%3F" 
+        target="_blank" 
+        class="whatsapp-float">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->

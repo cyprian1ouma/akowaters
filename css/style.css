@@ -25,6 +25,43 @@
     z-index: 99;
 }
 
+@media screen and (max-width: 991.98px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 575.98px) {
+    .back-to-top {
+        size: 18px;
+    }
+    
+}
+
+/* contact map */
+
+#contactmap{
+    width: 100%;
+    height: 350px;
+}
+@media screen and (max-width: 767px) {
+    #contactmap{
+        height: 300px;
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 575.98px) {
+    #contactmap{
+        height: 250px;
+        width: auto;
+    }
+    
+}
 
 /*** Spinner ***/
 #spinner {
@@ -217,39 +254,136 @@
     object-fit: cover;
 }
 
-/* added css */
+/* start section start here */
 .stats-section {
-    background: linear-gradient(to right, #0ea5e9, #38bdf8);
-    color: white;
-    border-radius: 0;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-/* added css */
-
-.stats-section {
-    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
-    color: white;
-    border-radius: 0;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    background: #49e1ec;
+    color: #000;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
 
-.stats-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 2%, transparent 20%),
-        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 2%, transparent 20%);
-    background-size: 100px 100px;
-    z-index: 0;
+/* Card Styling */
+.stat-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hover effect */
+.stat-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Icon circle */
+.icon-wrap {
+    width: 65px;
+    height: 65px;
+    background: #e8faff;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrap i {
+    font-size: 30px;
+    color: #0d6efd;
+}
+
+/* Counter styling */
+.stat-card h1 {
+    display: inline-block;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.plus {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .stats-section {
+        padding: 60px 0;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-card h1 {
+        font-size: 34px;
+    }
+
+    .icon-wrap {
+        width: 55px;
+        height: 55px;
+    }
+
+    .icon-wrap i {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .stat-card h1 {
+        font-size: 30px;
+    }
+}
+/* start section end here */
+
+/* Card enhancements */
+.stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    position: relative;
+    z-index: 2;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-25%) rotate(180deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    
+    .stat-card:hover {
+        transform: none;
+    }
 }
 
 /* Section Background Colors with Water & Solar Elements */
@@ -275,8 +409,7 @@
 /* testionials section */
 
 .section-bg-2 {
-    background: linear-gradient(to right, #7edaf1, #ffffff);
-    /* position: relative; */
+    /* background: linear-gradient(to right, #7edaf1, #ffffff); */
     overflow: hidden;
 }
 
@@ -317,10 +450,10 @@
 /* mission and video section */
 
 .section-bg-4 {
-    background: linear-gradient(135deg, #3b3bf0 0%, #497ff3 50%, #0ea5e9 100%);
     position: relative;
     overflow: hidden;
     padding: 60px 0;
+    background: linear-gradient(135deg, rgba(10, 60, 120, 0.9) 0%, rgba(15, 82, 165, 0.85) 100%);
 }
 
 .section-bg-4::before {
@@ -330,88 +463,90 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 60%, rgba(255, 255, 255, 0.1) 2%, transparent 20%),
-        radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.1) 2%, transparent 20%);
-    background-size: 140px 140px;
+    z-index: 0;
+    /* background-image: url('/img/water3.jpg'); */
+     background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+}
+
+/* Optional: Add object-like elements */
+.section-bg-4::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(30, 100, 200, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
     z-index: 0;
 }
 
-/* Enhanced Water Droplets */
-.water-droplet {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(-45deg);
+/* Make content appear above background */
+.section-bg-4 .container {
+    position: relative;
     z-index: 1;
-    box-shadow: 
-        0 0 10px rgba(255, 255, 255, 0.5),
-        inset 0 0 10px rgba(173, 216, 230, 0.5);
-    animation: float 6s ease-in-out infinite;
 }
 
-.droplet-1 {
-    width: 20px;
-    height: 20px;
-    top: 15%;
-    left: 10%;
-    animation-delay: 0s;
+/* Mission & Vision card enhancements */
+.mission-card, .vision-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid #1e90ff;
+    transition: transform 0.3s ease;
 }
 
-.droplet-2 {
-    width: 15px;
-    height: 15px;
-    top: 25%;
-    left: 85%;
-    animation-delay: 1s;
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
 }
 
-.droplet-3 {
-    width: 25px;
-    height: 25px;
-    top: 60%;
-    left: 15%;
-    animation-delay: 2s;
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .section-bg-4 {
+        padding: 40px 0;
+    }
+    
+    .section-bg-4::after {
+        width: 300px;
+        height: 300px;
+        top: -30%;
+        right: -20%;
+    }
 }
 
-.droplet-4 {
-    width: 18px;
-    height: 18px;
-    top: 70%;
-    left: 80%;
-    animation-delay: 3s;
+@media (max-width: 768px) {
+    .section-bg-4 {
+        padding: 30px 0;
+    }
+    
+    .section-bg-4::before {
+        opacity: 0.2; 
+    }
+    
+    .section-bg-4::after {
+        width: 200px;
+        height: 200px;
+        top: -20%;
+        right: -25%;
+    }
+    
+    .mission-card, .vision-card {
+        margin-bottom: 20px;
+    }
 }
 
-.droplet-5 {
-    width: 22px;
-    height: 22px;
-    top: 40%;
-    left: 5%;
-    animation-delay: 4s;
-}
-
-.droplet-6 {
-    width: 16px;
-    height: 16px;
-    top: 50%;
-    left: 90%;
-    animation-delay: 5s;
-}
-
-.droplet-7 {
-    width: 19px;
-    height: 19px;
-    top: 80%;
-    left: 20%;
-    animation-delay: 6s;
-}
-
-.droplet-8 {
-    width: 24px;
-    height: 24px;
-    top: 30%;
-    left: 75%;
-    animation-delay: 7s;
+@media (max-width: 576px) {
+    .section-bg-4 {
+        padding: 20px 0;
+    }
+    
+    .section-bg-4::after {
+        display: none; 
+    }
 }
 
 @keyframes float {
@@ -726,7 +861,7 @@
 
 /* Enhanced Service Cards */
 .service-card {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     transition: all 0.3s ease;
     border: none;
     position: relative;
@@ -736,7 +871,7 @@
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); */
 }
 
 .service-card::before {
@@ -746,7 +881,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 180, 219, 0.1), transparent);
+    /* background: linear-gradient(90deg, transparent, rgba(0, 180, 219, 0.1), transparent); */
     transition: left 0.5s ease;
 }
 
@@ -768,7 +903,7 @@
 .service-card:hover .service-img-container img {
     transform: scale(1.1);
 }
-
+/* 
 .service-icon {
     position: absolute;
     top: 15px;
@@ -784,12 +919,7 @@
     font-size: 18px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.2) rotate(15deg);
-    background: linear-gradient(135deg, #00b4db, #0d6efd);
-}
+} */
 
 /* Ensure content stays above background elements */
 .container-xxl, .container {
@@ -1160,7 +1290,7 @@
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px #f7f6f6;
 }
 
 .portfolio-img {
@@ -1487,24 +1617,6 @@
     z-index: 1;
 }
 
-/* Water Wave Animation for Stats Section */
-.water-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="rgba(255,255,255,0.1)"></path></svg>');
-    background-size: 1200px 100px;
-    animation: wave 10s linear infinite;
-}
-
-.water-wave:nth-child(2) {
-    bottom: 10px;
-    opacity: 0.5;
-    animation: wave 15s linear infinite;
-    background-size: 1100px 100px;
-}
 
 @keyframes wave {
     0% {
@@ -1605,21 +1717,6 @@
     overflow: hidden;
 }
 
-/* --- Water Waves Background --- */
-.water-waves::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 100%;
-    height: 250px;
-    background: url('/img/bg-waves.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.25;
-    z-index: 0;
-}
-
 /* --- Solar Rays Glow --- */
 .solar-rays::before {
     content: "";
@@ -1682,6 +1779,37 @@
     color: var(--light);
 }
 
+/* About Section Styling */
+/* Add background object + soft blue shade */
+.about-text {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+/* Background object */
+.about-text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/img/water1.jpg'); 
+    background-size: 380px; 
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* Soft bluish overlay */
+.about-text::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 112, 201, 0.10); 
+    z-index: -1;
+}
+
 
 /*** About ***/
 @media (min-width: 992px) {
@@ -1706,13 +1834,61 @@
     }
 }
 
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 400px !important;
+    }
+    
+    .about-text {
+        padding: 3rem 1.5rem !important;
+    }
+    
+    .p-lg-5 {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 300px !important;
+    }
+    
+    .about-text {
+        padding: 2rem 1rem !important;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .services-list {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-lg-6.ps-lg-0 {
+        min-height: 250px !important;
+    }
+    
+    .about-text {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
 
-.service-icon {
+/* .service-icon {
     position: relative;
     margin: -50px 0 25px 0;
     width: 100px;
@@ -1725,12 +1901,12 @@
     border-radius: 100px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
-}
+} */
 
-.service-item:hover .service-icon {
+/* .service-item:hover .service-icon {
     color: #FFFFFF;
     background: var(--primary);
-}
+} */
 
 
 /*** Feature ***/
@@ -1796,15 +1972,15 @@
     right: 50%;
 }
 
-.portfolio-item:hover .portfolio-img::before {
+/* .portfolio-item:hover .portfolio-img::before {
     width: 51%;
     left: 0;
-}
+} */
 
-.portfolio-item:hover .portfolio-img::after {
+/* .portfolio-item:hover .portfolio-img::after {
     width: 51%;
     right: 0;
-}
+} */
 
 .portfolio-btn {
     position: absolute;
@@ -2037,21 +2213,6 @@
     color: var(--primary);
 }
 
-/* added css on the about page */
-.water-flow-bg {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(255, 255, 255, 0.1) 50%, 
-        transparent 100%);
-    animation: waterFlow 8s linear infinite;
-    z-index: 0;
-}
-
 @keyframes waterFlow {
     0% {
         left: -100%;
@@ -2097,8 +2258,8 @@
 }
 
 .highlight-icon {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2136,8 +2297,8 @@
     }
     
     .highlight-icon {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         font-size: 1.3rem;
     }
 }
@@ -2159,15 +2320,6 @@
     }
 }
 
-
-/* About Section Styling */
-.bg-light {
-    background-color: #f8f9fa !important;
-}
-
-.about-text {
-    background: white;
-}
 
 /* Service Items Styling */
 .service-icon {
@@ -2193,6 +2345,7 @@
     padding-left: 20px;
 }
 
+
 /* Button Styling */
 .btn-primary {
     background: linear-gradient(135deg, #0d6efd, #0ea5e9);
@@ -2214,54 +2367,6 @@ h1 {
 .lead {
     font-size: 1.1rem;
     line-height: 1.7;
-}
-
-/* Responsive Design */
-@media (max-width: 991.98px) {
-    .col-lg-6.ps-lg-0 {
-        min-height: 400px !important;
-    }
-    
-    .about-text {
-        padding: 3rem 1.5rem !important;
-    }
-    
-    .p-lg-5 {
-        padding: 2rem !important;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .col-lg-6.ps-lg-0 {
-        min-height: 300px !important;
-    }
-    
-    .about-text {
-        padding: 2rem 1rem !important;
-    }
-    
-    h1 {
-        font-size: 1.75rem;
-    }
-    
-    .services-list {
-        padding-left: 15px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .col-lg-6.ps-lg-0 {
-        min-height: 250px !important;
-    }
-    
-    .about-text {
-        padding: 1.5rem 1rem !important;
-    }
-    
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 /* Background Patterns */
@@ -2542,7 +2647,7 @@ h1 {
         padding: 3px 10px;
     }
 }
-/* professional opening about  */
+
  /* Stat Cards */
  .stat-card {
     background: white;
@@ -2560,8 +2665,8 @@ h1 {
 
 /* Stat Icons */
 .stat-icon {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2592,8 +2697,8 @@ h5 {
     }
     
     .stat-icon {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         font-size: 1.3rem;
     }
     
@@ -2613,8 +2718,8 @@ h5 {
     }
     
     .stat-icon {
-        width: 55px;
-        height: 55px;
+        width: 25px;
+        height: 25px;
         font-size: 1.2rem;
     }
     
@@ -2696,7 +2801,7 @@ h5 {
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15); */
 }
 
 .service-number {
@@ -2752,9 +2857,9 @@ h5 {
     opacity: 0.9;
 }
 
-.service-icon {
-    width: 60px;
-    height: 60px;
+/* .service-icon {
+    width: 30px;
+    height: 30px;
     background: white;
     border-radius: 50%;
     display: flex;
@@ -2762,7 +2867,7 @@ h5 {
     justify-content: center;
     color: var(--primary-color);
     font-size: 1.5rem;
-}
+} */
 
 .service-content {
     padding: 25px;
@@ -2899,3 +3004,656 @@ h5 {
         padding: 0.75rem 1.5rem;
     }
 }
+
+/* style for contact page */
+.contact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
+.contact-item {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.contact-item:hover .contact-icon {
+    background: #0d6efd !important;
+}
+
+.contact-item:hover .contact-icon i {
+    color: white !important;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.form-control, .form-select {
+    border-color: #e9ecef !important;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.3);
+}
+
+.map-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.border-2 {
+    border-width: 2px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .map-container {
+        height: 400px !important;
+        margin-top: 2rem;
+    }
+}
+
+/* css for the footer */
+@media (max-width: 768px) {
+    .footer .row.g-5 {
+        gap: 2rem !important;
+    }
+    
+    .footer .btn-link {
+        padding: 0.25rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+    
+    .footer p {
+        font-size: 0.9rem;
+    }
+    
+    .footer .btn-social {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer .btn-social i {
+        font-size: 0.9rem;
+    }
+    
+    .footer img {
+        height: 50px !important;
+    }
+}
+
+/* Small button styles */
+.btn-primary.py-1 {
+    font-size: 0.8rem;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+/* Hover effects */
+.btn-link {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #0d6efd !important;
+    transform: translateX(5px);
+}
+
+.btn-social {
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* whatsapp icon */
+.whatsapp-float {
+    position: fixed;
+    left: 45px;
+    bottom: 45px;
+    background: #25D366;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    z-index: 999;
+    margin-bottom: 5px;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .whatsapp-float {
+        left: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .whatsapp-float {
+        left: 15px;
+        bottom: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+/* logo3 */
+#logo3{
+    height: 80px;
+    width: 80px; 
+    Background-color:white;
+    border-radius:5px;
+    margin-left: 30px;
+}
+
+/* ========== MOVING BACKGROUND EFFECT ========== */
+
+.profile-section {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a1929 0%, #1a3a5f 100%);
+}
+
+/* FULL WIDTH BACKGROUND OBJECT - Covers entire section */
+.full-width-water-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(8, 48, 90, 0.15) 20%,
+            rgba(12, 74, 140, 0.1) 50%,
+            rgba(8, 48, 90, 0.15) 80%,
+            rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+    opacity: 0.4;
+    animation: waveMove 15s ease-in-out infinite alternate;
+}
+
+/* WAVE PATTERN */
+.full-width-water-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 40px,
+            rgba(0, 0, 0, 0.1) 40px,
+            rgba(0, 0, 0, 0.1) 80px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 60px,
+            rgba(8, 48, 90, 0.1) 60px,
+            rgba(8, 48, 90, 0.1) 120px
+        );
+    animation: slideWave 20s linear infinite;
+}
+
+/* Water ripple effects */
+.water-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, 
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(8, 48, 90, 0.2) 30%,
+        transparent 70%);
+    z-index: 1;
+    opacity: 0.3;
+    animation: rippleExpand 8s ease-out infinite;
+}
+
+.water-ripple-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    left: -200px;
+    animation-delay: 0s;
+}
+
+.water-ripple-2 {
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.water-ripple-3 {
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 4s;
+}
+
+/* Animations */
+@keyframes waveMove {
+    0% {
+        background-position: 0% 50%;
+        transform: translateX(0) scale(1);
+    }
+    100% {
+        background-position: 100% 50%;
+        transform: translateX(-5%) scale(1.02);
+    }
+}
+
+@keyframes slideWave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes rippleExpand {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* MOVING WATER DROPLET TRAILS */
+.water-trail {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, 
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(8, 48, 90, 0.3) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.trail-1 {
+    top: 20%;
+    left: -100px;
+    animation: trailMove 25s linear infinite;
+}
+
+.trail-2 {
+    top: 40%;
+    left: -150px;
+    animation: trailMove 30s linear infinite 5s;
+}
+
+.trail-3 {
+    top: 60%;
+    left: -200px;
+    animation: trailMove 35s linear infinite 10s;
+}
+
+.trail-4 {
+    top: 80%;
+    left: -250px;
+    animation: trailMove 40s linear infinite 15s;
+}
+
+@keyframes trailMove {
+    0% {
+        left: -100px;
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-50px) scale(1.2);
+    }
+    50% {
+        transform: translateY(0) scale(1);
+    }
+    75% {
+        transform: translateY(50px) scale(0.8);
+    }
+    100% {
+        left: calc(100% + 100px);
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Make sure content stays above the animation */
+.profile-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Enhanced card styling for contrast */
+.profile-content {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+.mission-vision {
+    background: linear-gradient(135deg, 
+        rgba(8, 48, 90, 0.95) 0%,
+        rgba(12, 74, 140, 0.9) 100%) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+.company-highlights {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Text contrast */
+.profile-section h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-section h6.text-primary {
+    color: #66b3ff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 1200px) {
+    .full-width-water-bg::before {
+        background-size: 120px;
+    }
+    
+    .water-ripple-1 { width: 500px; height: 500px; }
+    .water-ripple-2 { width: 600px; height: 600px; }
+    .water-ripple-3 { width: 400px; height: 400px; }
+    
+    .water-trail {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-section {
+        padding: 60px 0;
+    }
+    
+    .full-width-water-bg {
+        opacity: 0.3;
+    }
+    
+    .full-width-water-bg::before {
+        background-size: 100px;
+    }
+    
+    .water-ripple-1 { width: 400px; height: 400px; top: -100px; left: -100px; }
+    .water-ripple-2 { width: 500px; height: 500px; }
+    .water-ripple-3 { width: 300px; height: 300px; bottom: -80px; right: -80px; }
+    
+    .water-trail {
+        width: 60px;
+        height: 60px;
+        opacity: 0.15;
+    }
+    
+    .trail-1, .trail-2, .trail-3, .trail-4 {
+        animation-duration: 20s;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 40px 0;
+    }
+    
+    .full-width-water-bg {
+        opacity: 0.25;
+        animation-duration: 20s;
+    }
+    
+    .full-width-water-bg::before {
+        background-size: 80px;
+        animation-duration: 25s;
+    }
+    
+    .water-ripple-1 { width: 300px; height: 300px; top: -50px; left: -50px; }
+    .water-ripple-2 { width: 400px; height: 400px; }
+    .water-ripple-3 { width: 250px; height: 250px; bottom: -50px; right: -50px; }
+    
+    .water-trail {
+        width: 40px;
+        height: 40px;
+        opacity: 0.1;
+        filter: blur(10px);
+    }
+    
+    .profile-content, .mission-vision {
+        padding: 1.5rem !important;
+    }
+    
+    /* Reduce animation intensity for mobile */
+    @keyframes trailMove {
+        0% { left: -100px; transform: translateY(0); }
+        100% { left: calc(100% + 100px); transform: translateY(0); }
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-section {
+        padding: 30px 0;
+    }
+    
+    .full-width-water-bg {
+        opacity: 0.2;
+    }
+    
+    .full-width-water-bg::before {
+        background-size: 60px;
+    }
+    
+    .water-ripple-1,
+    .water-ripple-2,
+    .water-ripple-3 {
+        display: none; /* Hide ripples on small screens */
+    }
+    
+    .water-trail {
+        display: none; /* Hide trails on small screens */
+    }
+    
+    /* Keep only subtle background animation */
+    .full-width-water-bg {
+        animation: waveMoveMobile 25s ease-in-out infinite alternate;
+    }
+    
+    @keyframes waveMoveMobile {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+    
+    .profile-content, .mission-vision {
+        padding: 1rem !important;
+    }
+    
+    .company-highlights {
+        padding: 1rem !important;
+    }
+    
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .full-width-water-bg::before {
+        background-size: 40px;
+    }
+    
+    .full-width-water-bg {
+        opacity: 0.15;
+    }
+}
+
+
+/* Modal Custom Styles */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 1.5rem 2rem;
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.service-image-container img {
+    transition: transform 0.5s ease;
+}
+
+.service-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.notes-box {
+    border-left: 4px solid #0d6efd;
+}
+
+.modal-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Different header colors for visual variety */
+.bg-warning.text-dark .modal-icon {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bg-dark .modal-icon {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bg-success .modal-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .modal-header {
+        padding: 1rem;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    .modal-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .modal-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+

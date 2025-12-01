@@ -63,12 +63,14 @@
                     <small>+254 718897204</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <!-- <a href="./admin/login.php"><i class="fas fa-users-crown fa-lg fa-fw" style="color:aquamarine;"></i></a> -->
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" 
+                    href="./admin/login.php">
+                    <i class="fas fa-user-lock"></i>
+                </a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
-                    
                 </div>
             </div>
         </div>
@@ -78,36 +80,21 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <div style="display:flex; align-items:center; gap:15px;">
-                <img src="./img/logo3.png" alt="logo"
-                     style="width:65px; height:65px;">
-                <div style="border-left:3px solid #0d6efd; height:45px;"></div>
-                <!-- <h3 class="text-primary" style="font-weight:700; margin:0; letter-spacing:1px;">
-                    AKO WATER AND ENERGY SOLUTIONS LTD
-                </h3> -->
-            </div>            
+        <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <!-- Logo image -->
+            <img src="./img/logo3.png" style="height: 120px;width: 140px;" alt="Ako Logo" class="h-10 w-11">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="project.html" class="nav-item nav-link">Project</a>
-                <!--<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                   <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                         <a href="404.html" class="dropdown-item">404 Page</a> 
-                    </div>
-                </div>-->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="index.php" class="nav-item nav-link active">Home</a>
+                <a href="about.php" class="nav-item nav-link">About</a>
+                <a href="service.php" class="nav-item nav-link">Service</a>
+                <a href="project.php" class="nav-item nav-link">Project</a>
+                <a href="gallery.php" class="nav-item nav-link ">Gallery</a>
+                <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -165,72 +152,64 @@
     <!-- Carousel End -->
 
     <!-- Stats Section -->
-    <div class="stats-section">
-        <!-- Water Waves -->
-        <div class="water-wave"></div>
-        <div class="water-wave"></div>
-        <div class="solar-rays"></div>
-        
-        <!-- Floating Elements -->
-        <div class="floating-element floating-solar" style="top: 20%; left: 10%;"></div>
-        <div class="floating-element floating-water" style="top: 60%; left: 85%;"></div>
-        
+    <div class="stats-section">            
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5 mt-3">
+                <div class="row g-4 mt-3">
 
-                    <!-- Happy Customers -->
+                    <!-- Happy Clients -->
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="btn-lg-square bg-light rounded-circle me-3">
-                                <i class="fa fa-users text-primary"></i>
+                        <div class="stat-card">
+                            <div class="icon-wrap">
+                                <i class="fa fa-users"></i>
                             </div>
-                            <h1 class="mb-0" data-toggle="counter-up">1000 </h1><span>+</span>
+                            <h1 data-toggle="counter-up">1000</h1><span class="plus">+</span>
+                            <h5>Happy Clients</h5>
+                            <p>Trusted by thousands of satisfied customers across Kenya and beyond.</p>
                         </div>
-                        <h5 class="mb-3">Happy Clients</h5>
-                        <span>Trusted by thousands of satisfied customers across Kenya and beyond.</span>
                     </div>
 
-                    <!-- Projects -->
+                    <!-- Projects Completed -->
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="btn-lg-square bg-light rounded-circle me-3">
-                                <i class="fa fa-check text-primary"></i>
+                        <div class="stat-card">
+                            <div class="icon-wrap">
+                                <i class="fa fa-check"></i>
                             </div>
-                            <h1 class="mb-0" data-toggle="counter-up">1000</h1> <span>+</span>
+                            <h1 data-toggle="counter-up">1000</h1><span class="plus">+</span>
+                            <h5>Projects Completed</h5>
+                            <p>Successfully delivered smart, sustainable and long-lasting solutions.</p>
                         </div>
-                        <h5 class="mb-3">Projects Completed</h5>
-                        <span>Successfully delivered smart, sustainable and long-lasting solutions.</span>
                     </div>
 
                     <!-- Awards -->
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="btn-lg-square bg-light rounded-circle me-3">
-                                <i class="fa fa-award text-primary"></i>
+                        <div class="stat-card">
+                            <div class="icon-wrap">
+                                <i class="fa fa-award"></i>
                             </div>
-                            <h1 class="mb-0" data-toggle="counter-up">10</h1>
+                            <h1 data-toggle="counter-up">10</h1>
+                            <h5>Recognitions & Awards</h5>
+                            <p>Celebrated for innovation, quality service and environmental impact.</p>
                         </div>
-                        <h5 class="mb-3">Recognitions & Awards</h5>
-                        <span>Celebrated for innovation, quality service and environmental impact.</span>
                     </div>
 
-                    <!-- Experts -->
+                    <!-- Professional Team -->
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="btn-lg-square bg-light rounded-circle me-3">
-                                <i class="fa fa-users-cog text-primary"></i>
+                        <div class="stat-card">
+                            <div class="icon-wrap">
+                                <i class="fa fa-users-cog"></i>
                             </div>
-                            <h1 class="mb-0" data-toggle="counter-up">50</h1><span>+</span>
+                            <h1 data-toggle="counter-up">50</h1><span class="plus">+</span>
+                            <h5>Professional Team</h5>
+                            <p>Dedicated engineers and specialists driven by excellence and impact.</p>
                         </div>
-                        <h5 class="mb-3">Professional Team</h5>
-                        <span>Dedicated engineers and specialists driven by excellence and impact.</span>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Feature Start -->
 
 
@@ -264,7 +243,7 @@
                         <p><i class="fa fa-check-circle text-primary me-2"></i>Pipeline, steel tank & water pan construction</p>
                         <p><i class="fa fa-check-circle text-primary me-2"></i>Solar systems & pump installation with WRA compliance support</p>
     
-                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
+                        <a href="about.php" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
                     </div>
                 </div>
     
@@ -275,27 +254,7 @@
 
     <!-- mission and vission start -->
     <div class="section-bg-4">
-        <!-- Enhanced Water Droplets -->
-        <div class="water-droplet droplet-1"></div>
-        <div class="water-droplet droplet-2"></div>
-        <div class="water-droplet droplet-3"></div>
-        <div class="water-droplet droplet-4"></div>
-        <div class="water-droplet droplet-5"></div>
-        <div class="water-droplet droplet-6"></div>
-        <div class="water-droplet droplet-7"></div>
-        <div class="water-droplet droplet-8"></div>
-        
-        <!-- Solar Energy Symbol -->
-        <div class="solar-symbol">
-            <div class="sun-core"></div>
-            <div class="sun-ray ray-1"></div>
-            <div class="sun-ray ray-2"></div>
-            <div class="sun-ray ray-3"></div>
-            <div class="sun-ray ray-4"></div>
-            <div class="sun-ray ray-5"></div>
-            <div class="sun-ray ray-6"></div>
-        </div>
-        
+        <!-- Enhanced Water Droplets -->        
         <div class="container py-5 text-dark rounded"> 
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-white">Mission & Vision</h2>
@@ -845,7 +804,7 @@
         
                 <!-- Enhanced Call to Action -->
                 <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.7s">
-                    <a href="./project.html" class="btn btn-primary btn-lg px-5 py-3">
+                    <a href="./project.php" class="btn btn-primary btn-lg px-5 py-3">
                         <i class="fas fa-rocket me-2"></i>Start Your Project
                     </a>
                 </div>
@@ -854,9 +813,9 @@
     </div>
     <!-- Projects End -->
 
-    <!-- Team Section -->
+    <!-- Team Section 
     <div class="section-bg-9">
-        <!-- Background Elements -->
+         Background Elements 
         <div class="team-bg-element team-gear team-gear-1"></div>
         <div class="team-bg-element team-gear team-gear-2"></div>
         <div class="team-bg-element team-circuit team-circuit-1"></div>
@@ -871,7 +830,7 @@
                 </div>
                 
                 <div class="row g-4">
-                    <!-- Team Member 1 -->
+                    Team Member 1 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-card">
                             <div class="team-img-container">
@@ -910,7 +869,7 @@
                         </div>
                     </div>
 
-                    <!-- Team Member 2 -->
+                    Team Member 2 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-card">
                             <div class="team-img-container">
@@ -949,7 +908,7 @@
                         </div>
                     </div>
 
-                    <!-- Team Member 3 -->
+                     Team Member 3 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-card">
                             <div class="team-img-container">
@@ -989,7 +948,7 @@
                     </div>
                 </div>
 
-                <!-- Team Stats -->
+                Team Stats 
                 <div class="row mt-5 pt-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="col-12">
                         <div class="team-stats bg-white rounded shadow-sm p-4">
@@ -1026,67 +985,67 @@
         </div>    
     </div>
    
-    <!-- Team End -->
+    Team End -->
 
 
     <!-- Testimonial Start -->
     <div class="section-bg-2">
         <!-- Solar Rays -->
     
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Testimonial</h6>
-                <h1 class="mb-4">What Our Clients Say</h1>
-            </div>
-    
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-    
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6 class="text-primary">Testimonial</h6>
+                    <h1 class="mb-4">What Our Clients Say</h1>
+                </div>
+        
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+        
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-img position-relative">
+                            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
+                            <div class="btn-square bg-primary rounded-circle">
+                                <i class="fa fa-quote-left text-white"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text text-center rounded p-4">
+                            <p>"AKO Water & Energy Solutions delivered exactly what we needed. Their work was professional, timely, and met high standards of quality. We are extremely satisfied."</p>
+                            <h5 class="mb-1">James Mwangi</h5>
+                            <span class="fst-italic">Property Owner</span>
                         </div>
                     </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>"AKO Water & Energy Solutions delivered exactly what we needed. Their work was professional, timely, and met high standards of quality. We are extremely satisfied."</p>
-                        <h5 class="mb-1">James Mwangi</h5>
-                        <span class="fst-italic">Property Owner</span>
-                    </div>
-                </div>
-    
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
+        
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-img position-relative">
+                            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
+                            <div class="btn-square bg-primary rounded-circle">
+                                <i class="fa fa-quote-left text-white"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text text-center rounded p-4">
+                            <p>"Their technical knowledge and customer service were excellent. They took time to explain every step and ensured everything was working perfectly."</p>
+                            <h5 class="mb-1">Grace Njeri</h5>
+                            <span class="fst-italic">Community Coordinator</span>
                         </div>
                     </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>"Their technical knowledge and customer service were excellent. They took time to explain every step and ensured everything was working perfectly."</p>
-                        <h5 class="mb-1">Grace Njeri</h5>
-                        <span class="fst-italic">Community Coordinator</span>
-                    </div>
-                </div>
-    
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
+        
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-img position-relative">
+                            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/image1.jpeg">
+                            <div class="btn-square bg-primary rounded-circle">
+                                <i class="fa fa-quote-left text-white"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text text-center rounded p-4">
+                            <p>"Reliable, knowledgeable, and efficient. We highly recommend them for sustainable water and energy projects."</p>
+                            <h5 class="mb-1">Kelvin Otieno</h5>
+                            <span class="fst-italic">Business Manager</span>
                         </div>
                     </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>"Reliable, knowledgeable, and efficient. We highly recommend them for sustainable water and energy projects."</p>
-                        <h5 class="mb-1">Kelvin Otieno</h5>
-                        <span class="fst-italic">Business Manager</span>
-                    </div>
+        
                 </div>
-    
             </div>
         </div>
-    </div>
     </div>
     
     
@@ -1094,14 +1053,15 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5">
         <div class="container py-5">
             <div class="row g-5">
+                <!-- Logo and Description Column -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>111-80100 MOMBASA KENYA.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 718897204</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Akowatersolutions@gmail.com</p>
+                    <img src="./img/logo3.png" alt="Ako Water and Energy Solutions" class="mb-3"  id="logo3">
+                    <p class="text-light small">
+                        Providing sustainable water and energy solutions for a better tomorrow. Your trusted partner in hydrogeological services and renewable energy systems.
+                    </p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -1109,43 +1069,29 @@
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>111-80100 MOMBASA KENYA.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 718897204</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Akowatersolutions@gmail.com</p>
+                </div>
+                
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="./about.html">About Us</a>
-                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="./service.html">Our Services</a>
-                    <a class="btn btn-link" href="./contact.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="./team.html">Support</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./about.php">About Us</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./contact.php">Contact Us</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./service.php">Our Services</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./contact.php">Terms & Condition</a>
+                    <a class="btn btn-link d-block text-start mb-2" href="./team.php">Support</a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Project Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-6.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
+                
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Subscribe to receive our latest news, updates, and special offers.</p>
+                    <p class="small">Subscribe to receive our latest news, updates, and special offers.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                        <input class="form-control border-0 w-100 py-2 ps-3 pe-5 small" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-1 px-3 small position-absolute top-0 end-0 mt-1 me-1">Sign Up</button>
                     </div>
                 </div>                
             </div>
@@ -1154,11 +1100,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Ako Water and Energy Solutions LTD</a>, All Right Reserved.
+                        &copy; <a href="#" class="text-white">Ako Water and Energy Solutions LTD</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         Designed By Ako Water and Energy Solutions LTD
-                        <!-- <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
                     </div>
                 </div>
             </div>
@@ -1169,6 +1114,13 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+     <!-- whatsaap icon -->
+    <a href="https://wa.me/254718897204?text=Hi,%20welcome%20to%20our%20organization.%20How%20can%20I%20help%20you%3F" 
+        target="_blank" 
+        class="whatsapp-float">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
