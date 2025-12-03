@@ -278,7 +278,7 @@ try {
             <div class="row g-5">
                 <!-- Logo and Description Column -->
                 <div class="col-lg-3 col-md-6">
-                    <img src="./img/logo3.png" alt="Ako Water and Energy Solutions" class="mb-3"  id="logo3">
+                <img src="./img/logo4.png" alt="Ako Water and Energy Solutions" class="mb-3"  style="height: 120px;width: 140px;">
                     <p class="text-light small">
                         Providing sustainable water and energy solutions for a better tomorrow. Your trusted partner in hydrogeological services and renewable energy systems.
                     </p>

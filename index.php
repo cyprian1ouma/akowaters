@@ -105,6 +105,20 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s" style="height: 25vh; min-height: 200px; margin-bottom:600px; padding-bottom:60px">
         <div class="owl-carousel header-carousel position-relative h-100">
+        <div class="owl-carousel-item position-relative h-100" data-dot="<img src='img/image21.jpeg'>">
+                <img class="img-fluid h-100 w-100" src="img/image28.jpg" alt="water solutions" style="object-fit: cover;">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="h2 text-white animated slideInDown">Clean Water & Sustainable Energy</h1>
+                                <p class="fw-medium text-white mb-3">Innovative solutions for water and energy needs.</p>
+                                <a href="" class="btn btn-primary btn-sm rounded-pill py-2 px-4 animated slideInLeft">Our Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="owl-carousel-item position-relative h-100" data-dot="<img src='img/image17.jpeg'>">
                 <img class="img-fluid h-100 w-100" src="img/image17.jpeg" alt="solar images" style="object-fit: cover;">
                 <div class="owl-carousel-inner">
@@ -119,20 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative h-100" data-dot="<img src='img/image21.jpeg'>">
-                <img class="img-fluid h-100 w-100" src="img/image21.jpeg" alt="water solutions" style="object-fit: cover;">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="h2 text-white animated slideInDown">Clean Water & Sustainable Energy</h1>
-                                <p class="fw-medium text-white mb-3">Innovative solutions for water and energy needs.</p>
-                                <a href="" class="btn btn-primary btn-sm rounded-pill py-2 px-4 animated slideInLeft">Our Services</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="owl-carousel-item position-relative h-100" data-dot="<img src='img/image12.jpeg'>">
                 <img class="img-fluid h-100 w-100" src="img/image12.jpeg" alt="renewable energy" style="object-fit: cover;">
                 <div class="owl-carousel-inner">
@@ -1058,7 +1059,7 @@
             <div class="row g-5">
                 <!-- Logo and Description Column -->
                 <div class="col-lg-3 col-md-6">
-                    <img src="./img/logo3.png" alt="Ako Water and Energy Solutions" class="mb-3"  id="logo3">
+                <img src="./img/logo4.png" alt="Ako Water and Energy Solutions" class="mb-3"  style="height: 120px;width: 140px;">
                     <p class="text-light small">
                         Providing sustainable water and energy solutions for a better tomorrow. Your trusted partner in hydrogeological services and renewable energy systems.
                     </p>

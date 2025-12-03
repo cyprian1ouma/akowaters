@@ -217,7 +217,7 @@
                     <div class="service-card">
                         <div class="service-number">03</div>
                         <div class="service-image">
-                            <img src="img/image5.jpeg" alt="Drilling Supervision">
+                            <img src="img/drilling.jpeg" alt="Drilling Supervision">
                             <div class="service-overlay">
                                 <div class="service-icon">
                                     <i class="fas fa-hard-hat"></i>
@@ -389,7 +389,7 @@
             <div class="row g-5">
                 <!-- Logo and Description Column -->
                 <div class="col-lg-3 col-md-6">
-                    <img src="./img/logo3.png" alt="Ako Water and Energy Solutions" class="mb-3" id="logo3">
+                <img src="./img/logo4.png" alt="Ako Water and Energy Solutions" class="mb-3"  style="height: 120px;width: 140px;">
                     <p class="text-light small">
                         Providing sustainable water and energy solutions for a better tomorrow. Your trusted partner in hydrogeological services and renewable energy systems.
                     </p>
@@ -669,7 +669,7 @@
                     <div class="row align-items-stretch">
                         <div class="col-lg-6 mb-4 mb-lg-0">
                             <div class="service-image-container h-100">
-                                <img src="img/image5.jpeg" class="img-fluid rounded h-100 w-100 object-fit-cover" alt="Drilling Supervision">
+                                <img src="img/drilling.jpeg" class="img-fluid rounded h-100 w-100 object-fit-cover" alt="Drilling Supervision">
                                 <div class="image-overlay">
                                     <span class="badge bg-primary">Quality Control</span>
                                 </div>
